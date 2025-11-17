@@ -1,0 +1,20 @@
+<resources>
+    <style name="Theme.GrowWell" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Status bar configuration -->
+        <item name="android:statusBarColor">@color/growell_indigo</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <!-- Navigation bar configuration -->
+        <item name="android:navigationBarColor">@color/growell_indigo</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Theme.GrowWell.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_celestial_orbit</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/growell_indigo</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+</resources>

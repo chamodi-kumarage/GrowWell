@@ -1,0 +1,16 @@
+<resources>
+    <color name="growell_pink">#DAA6FD</color>
+    <color name="growell_blue">#576BD9</color>
+    <color name="growell_indigo">#2F1886</color>
+
+    <color name="ash_600">#80B0B0B0</color>   <!-- semi-transparent ash for stroke -->
+    <color name="ash_fill_12">#1AB0B0B0</color>  <!-- ~10% ash -->
+    <color name="ash_ripple">#26FFFFFF</color>   <!-- subtle white ripple -->
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="ash_fill_20">#33B0B0B0</color> <!-- slightly darker ash -->
+    <color name="white_90">#E6FFFFFF</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="colorSecondary">#FF6200EE</color>
+</resources>

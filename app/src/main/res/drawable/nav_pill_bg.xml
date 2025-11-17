@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- subtle translucent fill so the gradient shows through -->
+    <solid android:color="#1AFFFFFF"/>   <!-- ~10% white -->
+    <stroke android:width="1.5dp" android:color="#8FFFFFFF"/> <!-- soft white outline -->
+    <corners android:radius="28dp"/>
+</shape>

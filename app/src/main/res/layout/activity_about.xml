@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/meditateRoot"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg_celestial_orbit"
+    android:fitsSystemWindows="false">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="136dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Top bar with Back + Title -->
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@null"
+                android:src="@drawable/back"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="About US"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="535dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="21dp"
+            android:gravity="center|top"
+            android:lineSpacingExtra="6dp"
+            android:paddingTop="50dp"
+            android:text="DailyFlow was created by an undergraduate student with one goal: to make everyday wellness simple and sustainable. I focus on clean design, privacy-first features, and offline-friendly tools—habit tracking, hydration reminders, a single bedtime alarm, study/meditate timers, and a journal space. I’m improving the app based on real user feedback and classroom learning. Have ideas or need help? Contact me at wsasheensri02@gmail.com."
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <!-- Bottom nav include -->
+<include
+    android:id="@+id/bottomNavInclude"
+    layout="@layout/bottom_nav_purple"
+    android:layout_width="0dp"
+    android:layout_height="72dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

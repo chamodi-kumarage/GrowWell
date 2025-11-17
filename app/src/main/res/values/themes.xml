@@ -1,0 +1,44 @@
+<resources>
+    <!-- App theme for all activities -->
+    <style name="Theme.GrowWell" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Status bar configuration -->
+        <item name="android:statusBarColor">@color/growell_indigo</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <!-- Navigation bar configuration -->
+        <item name="android:navigationBarColor">@color/growell_indigo</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <!-- Material components colors can go here if you use a color scheme -->
+    </style>
+
+    <!-- Optional splash/launch theme (fast, no toolbar) -->
+    <style name="Theme.GrowWell.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_celestial_orbit</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/growell_indigo</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <!-- Launch theme for LaunchActivity -->
+    <style name="Theme.GrowWell.Launch" parent="Theme.GrowWell.Splash">
+        <item name="android:windowBackground">@drawable/bg_celestial_orbit</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:statusBarColor">@color/growell_indigo</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <!-- Alarm theme for AlarmRingActivity -->
+    <style name="Theme.GrowWell.Alarm" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/growell_blue</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@color/growell_blue</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

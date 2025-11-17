@@ -1,0 +1,29 @@
+<!-- res/drawable/gradient_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="45"
+                android:startColor="@color/growell_indigo"
+                android:centerColor="@color/growell_blue"
+                android:endColor="@color/growell_pink" />
+        </shape>
+    </item>
+
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="45"
+                android:startColor="@color/growell_indigo"
+                android:endColor="@android:color/transparent"
+                android:centerX="0.2"
+                android:centerY="0.2"
+                android:dither="true" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    
+    <queries>
+        <!-- For implicit share of mood summary -->
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="text/plain" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GrowWell">
+
+        <!-- Launch / onboarding / auth -->
+        <activity 
+            android:name=".ui.LaunchActivity" 
+            android:exported="true"
+            android:theme="@style/Theme.GrowWell.Launch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".ui.Onboarding1Activity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.Onboarding2Activity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.Onboarding3Activity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.Onboarding4Activity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.Onboarding5Activity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.Onboarding8Activity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+            
+        <activity 
+            android:name=".ui.LoginActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.SignupActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.PermissionGateActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+
+        <!-- Main activities -->
+        <activity 
+            android:name=".ui.MainActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.HomeActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.ChooseHabitActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.SleepActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.MeditateActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.ReadingActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.WaterActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.WorkoutActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.JournalActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.SettingsActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.AboutActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+        <activity 
+            android:name=".ui.PrivacyActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell" />
+            
+        <!-- Alarm ringing activity -->
+        <activity 
+            android:name=".ui.AlarmRingActivity" 
+            android:exported="false"
+            android:theme="@style/Theme.GrowWell.Alarm"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:excludeFromRecents="true" />
+
+        <!-- Alarm receivers -->
+        <receiver
+            android:name=".alarms.AlarmReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".alarms.AlarmStopReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".alarms.BootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".alarms.HydrationReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".alarms.SleepAlarmReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".alarms.TimerReceiver"
+            android:exported="false" />
+
+        <!-- App widget -->
+        <receiver
+            android:name=".widget.WellnessWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info"/>
+        </receiver>
+
+    </application>
+</manifest>
