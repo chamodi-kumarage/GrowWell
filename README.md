@@ -1,75 +1,93 @@
-🌱 GrowWell – Habit & Wellness Tracking App
+# 🌿 GrowWell – Habit & Wellness Tracking App
 
-GrowWell is a personal wellness and habit-tracking Android application designed to help users build and maintain a healthier daily routine.
-It provides a calming, minimal UI and an intuitive experience for managing day-to-day wellness habits such as hydration, sleep, reading, meditation, mood tracking, and more.
+GrowWell is a personal wellness and habit-tracking Android application designed to help users build healthy routines with ease.  
+Its calming UI, smooth navigation, and habit-focused modules make daily wellness simple, enjoyable, and consistent.
 
-✨ Features
-💧 Water Tracker
+---
 
-Log daily water intake
+## ✨ App Description
 
-Visual progress indicator
+GrowWell helps users manage and track their wellness habits such as hydration, sleep, meditation, reading, workouts, and mood journaling.  
+Each habit has its own dedicated screen for input, progress tracking, and daily updates.
 
-Simple input and reset option
+The app uses **SharedPreferences** to save all user progress locally, ensuring a seamless and persistent user experience.
 
-💤 Sleep Tracker
+GrowWell features a clean and modern design—gradient backgrounds, pastel highlights, rounded components, and a smooth bottom navigation bar for intuitive movement across screens.
 
-Set daily sleep alarms
+---
 
-Track sleep schedule consistency
+## 🌟 Key Features
 
-🧘 Meditation Tracker
+### 💧 **Water Tracker**
+- Log daily water intake  
+- Dynamic progress bar  
+- Hydration reminders  
 
-Save meditation durations
+### 💤 **Sleep Tracker**
+- Set daily sleep goals  
+- Alarm setup  
+- View past sleep trends  
 
-Countdown timer for sessions
+### 🧘 **Meditation**
+- Save your meditation durations  
+- Use a countdown timer  
+- Calm UI with breathing visuals  
 
-📖 Reading Tracker
+### 📖 **Reading Tracker**
+- Track reading sessions  
+- Record number of pages  
+- Daily and weekly reading progress  
 
-Track reading sessions
+### 😊 **Mood Journal**
+- Choose emoji-based moods  
+- Add small notes  
+- Daily wellness reflection  
 
-Update progress by number of pages
+### ⚙️ **Settings**
+- Reset app data  
+- Manage preferences  
 
-😊 Mood Journal
+### 💾 **Local Storage**
+- Full data persistence using SharedPreferences  
 
-Select a daily mood using emojis
+### 🎨 **Attractive UI**
+- Light gradients  
+- Smooth glowing effects  
+- Simple and calming interface  
 
-Add short notes for emotional reflection
+---
 
-⚙️ Settings
+## 📸 App Screenshots
 
-Manage user preferences
+> Ensure your screenshot files are saved inside:  
+> `screenshots/1.png`, `screenshots/2.png`, ...  
 
-Reset stored data
+| Onboarding | Home | Water Tracker |
+|-----------|------|----------------|
+| ![1](screenshots/1.png) | ![2](screenshots/2.png) | ![3](screenshots/3.png) |
 
-Configure notifications
+| Sleep Tracker | Meditation | Reading |
+|---------------|------------|----------|
+| ![4](screenshots/4.png) | ![5](screenshots/5.png) | ![6](screenshots/6.png) |
 
-💾 Local Data Storage
+| Mood Journal | Statistics | Settings |
+|--------------|------------|-----------|
+| ![7](screenshots/7.png) | ![8](screenshots/8.png) | ![9](screenshots/9.png) |
 
-All habit and user preferences are saved locally using SharedPreferences
+---
 
-🎨 UI/UX Design
+## 🚀 Tech Stack
 
-GrowWell features:
+- **Language:** Kotlin  
+- **UI:** XML layouts, gradients, custom components  
+- **Architecture:** Activity-based with SharedPreferences  
+- **Storage:** SharedPreferences for local persistence  
+- **Platform:** Android  
 
-Calm gradient blue backgrounds
+---
 
-Pastel highlights and rounded components
+## 📦 Installation
 
-Simple, distraction-free navigation
-
-Smooth bottom navigation bar for Home, Settings, and Statistics
-
-The design supports a relaxing wellness experience while keeping everything easily accessible.
-
-📱 Tech Stack
-
-Language: Kotlin
-
-Architecture: Activity + Fragment based UI
-
-Local Storage: SharedPreferences
-
-IDE: Android Studio
-
-Platform: Android
+1. Clone the repository:
+```bash
+git clone https://github.com/chamodi-kumarage/GrowWell.git
